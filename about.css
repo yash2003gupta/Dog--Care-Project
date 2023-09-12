@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 1000; 
+
+  transition: background-color 0.3s ease;
+}
+
+
+#header ~ * {
+  position: relative;
+  z-index: 999; 
+}
+
+#navbar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #222;
+transition: 0.3s ease;
+}
+
+#navbar li a.active::after
+{
+    content:"";
+    width:60%;
+    height:2px;
+    background:#cb1212;
+    position: absolute;
+    bottom:-4px;
+    left:430px;
+
+}
+.anime{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(images/download.svg);
+  height: 7px;
+  z-index: 2;
+  position: relative;
+  transform: rotate(90deg);
+  width: 75px;
+  margin-top: 47px;
+}
+.follow i {
+    color:#465b52;
+    padding-right: 4px;
+    cursor:pointer;
+    
+  }
+  .icon i{
+    margin-right: 40px;
+    font-size: larger;
+  }
+   .follow i:hover,
+   a:hover{
+      color:#9b51e0;
+      font-size: 30px;
+  }
+
+
+.heading{
+    margin-top:0px;
+    text-align: center;
+    align-items: center;
+    clear: both;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    -moz-transition: color 0.2s 0.2s;
+    -o-transition: color 0.2s 0.2s;
+    -webkit-transition: color 0.2s 0.2s;
+    transition: color 0.2s 0.2s;
+    transition-timing-function: ease-out;
+  }
+
+  #image .img {
+    opacity: 0;
+}
+
+#image img {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.img{
+    align-items: center;
+    margin-left: 200px;
+}
+
+#image.sticky img {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    z-index: 999;
+}
+.textt{
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 770px;
+    margin-top: 25px;
+    box-sizing: inherit;
+}
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.video-containers{
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.gmap_canvas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.gmap_canvas iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.profile{
+    text-align: center;
+  
+   display: flex;
+  
+    justify-content: space-around;
+    border: 4px solid  #9b51e0;
+   padding:20px;
+   margin:50px;
+   /* max-width:600px; */
+}
+
+.text-column{
+    max-width: 800px;
+    
+   margin:0 auto ;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    position: relative;
+    /* color: white; */
+  }
+  .ptext{
+    margin-top:40px;
+  }
+  
+  .container{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .email-input {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .subscribe-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .subscribe-button:hover {
+    background-color: #0056b3;
+  }
+  footer:hover{
+    background-color: #4AA79C;
+    color:#fff
+  }
